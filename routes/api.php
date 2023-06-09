@@ -22,5 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/getInstansi', [instansi_controller::class, 'index']); //get all data
 Route::post('/createInstansi', [instansi_controller::class, 'store']); //create data
 Route::post('/updateInstansi/{id}', [instansi_controller::class, 'update']); //update data
+Route::post('/deleteInstansi/{id}', [instansi_controller::class, 'destroy']); //delete data
 
 
